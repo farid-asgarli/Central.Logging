@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <NugetAudit>disable</NugetAudit>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>Central.Logging.Core</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Farid Asgarli</Authors>
+    <Description>A custom logging package built on Serilog for Extended console logging</Description>
+    <PackageTags>logging;serilog;console;dotnet</PackageTags>
+    <LangVersion>latest</LangVersion>
+    <SuppressTfmSupportBuildWarnings>true</SuppressTfmSupportBuildWarnings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Central.Logging.Abstractions\Central.Logging.Abstractions.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+
+</Project>

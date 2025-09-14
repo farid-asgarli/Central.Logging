@@ -1,0 +1,153 @@
+{
+  "format": 1,
+  "restore": {
+    "c:\\Users\\CyberDream\\Desktop\\logging\\Central.Logging.Http\\Central.Logging.Http.csproj": {}
+  },
+  "projects": {
+    "c:\\Users\\CyberDream\\Desktop\\logging\\Central.Logging.Abstractions\\Central.Logging.Abstractions.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\Users\\CyberDream\\Desktop\\logging\\Central.Logging.Abstractions\\Central.Logging.Abstractions.csproj",
+        "projectName": "Central.Logging.Abstractions",
+        "projectPath": "c:\\Users\\CyberDream\\Desktop\\logging\\Central.Logging.Abstractions\\Central.Logging.Abstractions.csproj",
+        "packagesPath": "C:\\Users\\CyberDream\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\CyberDream\\Desktop\\logging\\Central.Logging.Abstractions\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\CyberDream\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "disable",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Serilog": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "Serilog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Serilog.Sinks.Elasticsearch": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.414\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "c:\\Users\\CyberDream\\Desktop\\logging\\Central.Logging.Http\\Central.Logging.Http.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\Users\\CyberDream\\Desktop\\logging\\Central.Logging.Http\\Central.Logging.Http.csproj",
+        "projectName": "Central.Logging.Http",
+        "projectPath": "c:\\Users\\CyberDream\\Desktop\\logging\\Central.Logging.Http\\Central.Logging.Http.csproj",
+        "packagesPath": "C:\\Users\\CyberDream\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\CyberDream\\Desktop\\logging\\Central.Logging.Http\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\CyberDream\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "c:\\Users\\CyberDream\\Desktop\\logging\\Central.Logging.Abstractions\\Central.Logging.Abstractions.csproj": {
+                "projectPath": "c:\\Users\\CyberDream\\Desktop\\logging\\Central.Logging.Abstractions\\Central.Logging.Abstractions.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "disable",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.414\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
