@@ -1,8 +1,8 @@
 using System.Net.Mime;
 
-namespace Central.Logging.Http.Contents;
+namespace Central.Logging.Http.Constants;
 
-public class DefaultContentTypes
+public static class HttpContentTypes
 {
     public const string ApplicationJson = MediaTypeNames.Application.Json;
     public const string ApplicationXml = MediaTypeNames.Application.Xml;

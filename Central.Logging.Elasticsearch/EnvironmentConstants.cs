@@ -1,6 +1,6 @@
 namespace Central.Logging.Elasticsearch;
 
-public class WebEnv
+public class EnvironmentConstants
 {
     public static string CurrentEnv =>
         Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")?.ToLowerInvariant()!;

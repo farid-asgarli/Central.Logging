@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace Central.Logging.Http;
+namespace Central.Logging.Http.Middleware;
 
 /// <summary>
 /// Custom stream wrapper for capturing response content while writing to the original stream

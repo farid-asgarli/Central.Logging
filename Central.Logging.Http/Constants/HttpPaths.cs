@@ -1,6 +1,6 @@
-namespace Central.Logging.Http.Contents;
+namespace Central.Logging.Http.Constants;
 
-public static class DefaultRequestPaths
+public static class HttpPaths
 {
     public const string Health = "/health";
     public const string Metrics = "/metrics";

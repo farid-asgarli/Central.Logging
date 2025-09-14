@@ -1,6 +1,6 @@
-namespace Central.Logging.Http.Contents;
+namespace Central.Logging.Http.Constants;
 
-public class DefaultSensitiveFields
+public static class SensitiveFieldNames
 {
     public const string Password = "password";
     public const string Token = "token";

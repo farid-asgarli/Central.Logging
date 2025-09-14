@@ -1,6 +1,6 @@
-using Central.Logging.Http.Contents;
+using Central.Logging.Http.Constants;
 
-namespace Central.Logging.Http;
+namespace Central.Logging.Http.Configuration;
 
 /// <summary>
 /// Configuration for HttpLoggingMiddleware
@@ -62,10 +62,10 @@ public class HttpLoggingMiddlewareConfiguration
     /// </summary>
     public List<string> ExcludedPaths { get; set; } =
         [
-            DefaultRequestPaths.Health,
-            DefaultRequestPaths.Favicon,
-            DefaultRequestPaths.Metrics,
-            DefaultRequestPaths.Swagger,
+            HttpPaths.Health,
+            HttpPaths.Favicon,
+            HttpPaths.Metrics,
+            HttpPaths.Swagger,
         ];
 
     /// <summary>
@@ -73,11 +73,11 @@ public class HttpLoggingMiddlewareConfiguration
     /// </summary>
     public List<string> ExcludedHeaders { get; set; } =
         [
-            DefaultRequestHeaders.Cookie,
-            DefaultRequestHeaders.XAPIKey,
-            DefaultRequestHeaders.SetCookie,
-            DefaultRequestHeaders.XAuthToken,
-            DefaultRequestHeaders.Authorization,
+            HttpHeaders.Cookie,
+            HttpHeaders.XAPIKey,
+            HttpHeaders.SetCookie,
+            HttpHeaders.XAuthToken,
+            HttpHeaders.Authorization,
         ];
 
     /// <summary>
@@ -85,11 +85,11 @@ public class HttpLoggingMiddlewareConfiguration
     /// </summary>
     public List<string> LoggableContentTypes { get; set; } =
         [
-            DefaultContentTypes.TextXml,
-            DefaultContentTypes.TextPlain,
-            DefaultContentTypes.ApplicationXml,
-            DefaultContentTypes.ApplicationJson,
-            DefaultContentTypes.ApplicationXWWWFormUrlEncoded,
+            HttpContentTypes.TextXml,
+            HttpContentTypes.TextPlain,
+            HttpContentTypes.ApplicationXml,
+            HttpContentTypes.ApplicationJson,
+            HttpContentTypes.ApplicationXWWWFormUrlEncoded,
         ];
 
     /// <summary>
@@ -97,11 +97,11 @@ public class HttpLoggingMiddlewareConfiguration
     /// </summary>
     public List<string> SensitiveFields { get; set; } =
         [
-            DefaultSensitiveFields.Key,
-            DefaultSensitiveFields.Token,
-            DefaultSensitiveFields.Secret,
-            DefaultSensitiveFields.Password,
-            DefaultSensitiveFields.Authorization,
+            SensitiveFieldNames.Key,
+            SensitiveFieldNames.Token,
+            SensitiveFieldNames.Secret,
+            SensitiveFieldNames.Password,
+            SensitiveFieldNames.Authorization,
         ];
 
     /// <summary>

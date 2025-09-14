@@ -1,6 +1,6 @@
-namespace Central.Logging.Http.Contents;
+namespace Central.Logging.Http.Constants;
 
-public static class DefaultRequestHeaders
+public static class HttpHeaders
 {
     public const string Authorization = "Authorization";
     public const string Cookie = "Cookie";

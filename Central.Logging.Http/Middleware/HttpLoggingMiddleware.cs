@@ -2,11 +2,12 @@ using System.Diagnostics;
 using System.Text;
 using System.Text.RegularExpressions;
 using Central.Logging.Abstractions;
+using Central.Logging.Http.Configuration;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace Central.Logging.Http;
+namespace Central.Logging.Http.Middleware;
 
 /// <summary>
 /// Middleware for logging HTTP requests and responses
