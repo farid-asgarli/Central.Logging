@@ -46,16 +46,6 @@ public static class IndexUtilities
     }
 
     /// <summary>
-    /// Gets the application name from a CentralLoggingConfiguration, with fallbacks
-    /// </summary>
-    /// <param name="config">The logging configuration</param>
-    /// <returns>A sanitized application name</returns>
-    public static string GetApplicationNameFromConfig(CentralLoggingConfiguration config)
-    {
-        return GetApplicationName(config.ApplicationName);
-    }
-
-    /// <summary>
     /// Gets the namespace from a configuration or returns default
     /// </summary>
     /// <param name="providedNamespace">Optional explicitly provided namespace</param>

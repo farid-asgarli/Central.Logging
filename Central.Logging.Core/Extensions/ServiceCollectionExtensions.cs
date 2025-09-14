@@ -34,8 +34,10 @@ public static class ServiceCollectionExtensions
         CentralLoggingConfiguration configuration
     )
     {
-        if (services == null) throw new ArgumentNullException(nameof(services));
-        if (configuration == null) throw new ArgumentNullException(nameof(configuration));
+        if (services == null)
+            throw new ArgumentNullException(nameof(services));
+        if (configuration == null)
+            throw new ArgumentNullException(nameof(configuration));
 
         var loggerConfig = new LoggingConfigurationBuilder()
             .WithAppName(configuration.ApplicationName)
@@ -78,7 +80,8 @@ public static class ServiceCollectionExtensions
     /// </example>
     public static IServiceCollection AddCentralLogging(this IServiceCollection services)
     {
-        if (services == null) throw new ArgumentNullException(nameof(services));
+        if (services == null)
+            throw new ArgumentNullException(nameof(services));
 
         CentralLoggingConfiguration configuration = new();
 

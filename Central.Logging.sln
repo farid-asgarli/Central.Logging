@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Central.Logging.Core", "Cen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Central.Logging.Http", "Central.Logging.Http\Central.Logging.Http.csproj", "{44732455-33B8-40C2-88A5-C0A5564C0F4E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppLogTesting", "AppLogTesting\AppLogTesting.csproj", "{9261FC3C-A4AE-4C8F-A939-97802DC3103C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{44732455-33B8-40C2-88A5-C0A5564C0F4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44732455-33B8-40C2-88A5-C0A5564C0F4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44732455-33B8-40C2-88A5-C0A5564C0F4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9261FC3C-A4AE-4C8F-A939-97802DC3103C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9261FC3C-A4AE-4C8F-A939-97802DC3103C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9261FC3C-A4AE-4C8F-A939-97802DC3103C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9261FC3C-A4AE-4C8F-A939-97802DC3103C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

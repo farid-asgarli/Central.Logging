@@ -31,6 +31,11 @@ public class ElasticsearchIndexConfiguration
     public string GetFormattedIndexName()
     {
         var environment = EnvironmentConstants.CurrentEnv ?? "unknown";
-        return IndexUtilities.GetFormattedIndexName(environment, Namespace, ApplicationName, DateFormat);
+        return IndexUtilities.GetFormattedIndexName(
+            environment,
+            DateFormat,
+            Namespace,
+            ApplicationName
+        );
     }
 }
